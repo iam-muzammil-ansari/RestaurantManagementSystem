@@ -28,6 +28,10 @@ This is a Restaurant Management System application built using Java and Spring B
 - Java Development Kit (JDK) 17 or later
 - Apache Maven
 - Git
+- Dependencies:
+     - Spring Web
+     - Lombok
+     - Validation   
 
 ## Data Flow
 
