@@ -31,7 +31,7 @@ This is a Restaurant Management System application built using Java and Spring B
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/restaurant-management-system.git
+   git clone https://github.com/ayaan097/RestaurantManagementSystem.git
    ```
 
 2. Navigate to the project directory:
