@@ -6,6 +6,9 @@ This is a Restaurant Management System application built using Java and Spring B
 
 - [Features](#features)
 - [Prerequisites](#prerequisites)
+- [Data Flow](#data-flow)
+- [Data Structure Used](#data-structure-used)
+- [Project Summary](#project-summary)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
@@ -25,6 +28,39 @@ This is a Restaurant Management System application built using Java and Spring B
 - Java Development Kit (JDK) 17 or later
 - Apache Maven
 - Git
+
+## Data Flow
+
+The data flow in the project is as follows:
+
+  1. Controller
+
+     - `RestaurantController`: Handles incoming HTTP requests related to restaurants. It defines various methods for handling CRUD operations on restaurants.
+
+   2. Services
+
+      - `RestaurantService`: Provides business logic for managing restaurants. It interacts with the repository to perform operations on the restaurant data.
+
+   3. Repository
+
+      - `RestaurantRepo`: Provides methods for accessing and manipulating the restaurant data. It uses an in-memory `restaurantMap` as a storage mechanism.
+
+   4. Model
+
+      - `Restaurant`: Represents a restaurant. It has attributes such as ID, name, address, phone number, specialty, and total staff count.
+
+   5. Configuration
+
+      - `BeanManager`: Defines a bean for a `Map<Integer, Restaurant>`, which is used as an in-memory storage for the restaurant data.
+
+## Data Structure Used
+
+- `Map<Integer, Restaurant>`: Used as an in-memory storage for storing restaurant objects. The restaurant ID is used as the key.
+
+## Project Summary
+
+The project demonstrates the use of Java and the Spring framework for building a restaurant management system. It follows a simple architecture where the controller handles incoming requests, the service provides business logic, and the repository interacts with the data storage. The project includes input validation using annotations, dependency injection, and RESTful API design principles.
+
 
 ## Installation
 
